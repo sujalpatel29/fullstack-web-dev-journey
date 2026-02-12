@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="hello" id="hello" onchange="testS()">
+        <label for="nothing" id="hello2"></label>
+    </form>
+
+    <script>
+        function testS() {
+            let str = document.getElementById("hello").value;
+            let re = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+
+            if(re.test(str)) {
+                document.getElementById("hello2").innerHTML = "okay";
+            } else {
+                document.getElementById("hello2").innerHTML = "not okay";
+            }
+        }
+    </script>
+</body>
+</html>

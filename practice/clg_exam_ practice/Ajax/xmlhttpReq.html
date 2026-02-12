@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hello">Hello</button><br>
+    <button id="">byee</button>
+
+    <script>
+        console.log("script success!");
+
+        let btn1 = document.getElementById('hello');
+        btn1.addEventListener('click', fetchData);
+
+        function fetchData(){
+            
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'hello.txt', true);
+
+            xhr.onprogress = function(){
+                console.log("on progress!!");
+            }
+
+            xhr.onload = function(){
+                console.log(this.responseText);
+            }
+
+            xhr.send();
+
+            console.log("hello how are you?");
+        }
+    </script>
+</body>
+</html>

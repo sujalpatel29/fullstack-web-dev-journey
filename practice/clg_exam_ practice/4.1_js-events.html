@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        input {
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+        }
+        input:focus {
+            border-color: blue;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="clickBtn">Click Me</button>
+    <br><br>
+    <input type="text" id="textInput" placeholder="Focus and Blur this field">
+
+    <script>
+        // OnClick event
+        document.getElementById("clickBtn").onclick = function() {
+            alert("Button Clicked!");
+        };
+
+        // OnFocus event
+        document.getElementById("textInput").onfocus = function() {
+            this.style.backgroundColor = "lightyellow";
+        };
+
+        // OnBlur event
+        document.getElementById("textInput").onblur = function() {
+            this.style.backgroundColor = "white";
+        };
+
+        document.getElementById("textInput").onmouseover = function(){
+            this.focus();
+        };
+
+        document.getElementById("textInput").onmouseout = function(){
+            this.blur();
+        };
+    </script>
+
+</body>
+</html>

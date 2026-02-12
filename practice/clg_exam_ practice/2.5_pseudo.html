@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p::first-line {
+      color: green;
+      font-weight: bold;
+    }
+
+    p::first-letter {
+      font-size: 30px;
+      color: red;
+    }
+
+    .note::before {
+      content: "📌 ";
+      color: blue;
+    }
+
+    .note::after {
+      content: " ✔";
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+<p>This is a paragraph to show how pseudo-elements work in CSS.</p>
+
+<p class="note">Remember to complete your assignments.</p>
+
+</body>
+</html>

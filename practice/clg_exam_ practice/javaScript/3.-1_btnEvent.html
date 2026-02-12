@@ -1,0 +1,23 @@
+<!-- Create a webpage containing one button. Clicking on this button, change the size of the window & position -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resize and Move Window</title>
+</head>
+<body>
+
+<button onclick="resizeAndMove()">Resize & Move Window</button>
+
+<script>
+  function resizeAndMove() {
+    // Resize window to 600x400 pixels
+    window.resizeTo(600, 400);
+    
+    // Move window to position (200, 100)
+    window.moveTo(200, 100);
+  }
+</script>
+
+</body>
+</html>

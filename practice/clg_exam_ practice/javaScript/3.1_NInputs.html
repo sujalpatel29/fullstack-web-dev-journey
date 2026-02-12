@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Enter number: <input type="text" id="text"><br><br>
+        <input type="submit" value="Submit" oninput="print();">
+
+    </form>
+    <script>
+        function print(){
+            let n = document.getElementById("text").value;
+            let count = 0;
+            for(let i=1; count<n; i++){
+                if(i%2 != 0){
+                    document.write(i+"<br>");
+                    count++;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- by chatgpt
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print N Odd Numbers</title>
+</head>
+<body>
+
+<h3>Enter a number:</h3>
+<input type="number" id="numInput">
+<button onclick="printOddNumbers()">Print Odd Numbers</button>
+
+<p id="result"></p>
+
+<script>
+  function printOddNumbers() {
+    let N = parseInt(document.getElementById("numInput").value);
+    let result = "";
+    let count = 0;
+    let num = 1;
+
+    while (count < N) {
+      result += num + " ";
+      num += 2;
+      count++;
+    }
+
+    document.getElementById("result").innerText = "First " + N + " odd numbers: " + result;
+  }
+</script>
+
+</body>
+</html> -->
