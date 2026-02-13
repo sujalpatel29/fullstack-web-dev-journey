@@ -34,9 +34,9 @@ The content here reflects my continuous progress — starting from core web fund
 
 This learning journey is based on concepts and practical exercises from the following Udemy course:
 
-**Course Name:** The Complete Full-Stack Web Development Bootcamp
-**Platform:** Udemy
-**Instructor:** Dr. Angela Yu
+* **Course Name:** The Complete Full-Stack Web Development Bootcamp
+* **Platform:** Udemy
+* **Instructor:** Dr. Angela Yu
 
 I used this course as a structured guide while implementing and experimenting with the concepts on my own.
 
